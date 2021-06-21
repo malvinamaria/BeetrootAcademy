@@ -28,5 +28,9 @@ elif some_string != 10 or some_string.isnumeric == False:
 
 #task 3 The name check.
 
-my_name = input("My name: ")
-print("Hi", my_name + "!")
+name = 'malwina'
+z = input("My name:")
+if z == name or z == name.capitalize():
+    print("this is correct")
+else:
+    print("This is wrong format")
