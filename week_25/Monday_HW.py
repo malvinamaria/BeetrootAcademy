@@ -31,6 +31,6 @@ elif some_string != 10 or some_string.isnumeric == False:
 name = 'malwina'
 z = input("My name:")
 if z == name or z == name.capitalize():
-    print("this is correct")
+    print("True, this is correct.")
 else:
-    print("This is wrong format")
+    print("False, This is wrong format.")
