@@ -46,3 +46,13 @@ print(randomlist_1)
 #randomlist_1 = list
 #Then, convert the dictionary back into a list:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+#task 3
+
+list_of_num_1 = [i for i in range(100) if i % 7 ==0]
+#print(list_of_num_1)
+list_of_num_2 = [i for i in range(100) if i % 5 != 0]
+
+#print(list_of_num_2)
+
+list_of_num_1.extend(list_of_num_2)
+print(list_of_num_1)
