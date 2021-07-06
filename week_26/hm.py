@@ -22,3 +22,19 @@ def oops():
         
 print(oops())
 
+#task 2 
+
+a, b = [int(a) for a in input("Input the value of a & b: ").split()]
+print(f"The value of a =",a)
+print("and the value of b =",b)
+
+
+try:
+    a ** 2 / b
+except ZeroDivisionError:
+    print("This operationis not allowed")
+    raise
+else:
+    print("This operation is allowed")
+    
+print(a, b)
