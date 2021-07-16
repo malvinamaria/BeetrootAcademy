@@ -12,3 +12,13 @@ print(function.__code__)  # code object function at 0x10b1d5660
 
 
 # TASK TWO
+def adding(z):
+    return z * 7
+
+def sub(f):
+    def result_fun(z):
+        return f(f(z))
+    return result_fun
+
+final_result = sub(adding)
+print(final_result(10))  # ans = 490   70*(10*7)
