@@ -22,3 +22,22 @@ def sub(f):
 
 final_result = sub(adding)
 print(final_result(10))  # ans = 490   70*(10*7)
+
+
+# TASK 3
+
+nums1 = [1, 2, 3, 4, 5]
+nums2 = [1, -2, 3, -4, 5]
+
+def callbackFunc1(nums):
+    return [num ** 2 for num in nums]
+    print("This is a callback function one.")
+
+def callbackFunc2(self):
+    return [num for num in nums if num > 0]
+    print("This is a callback function two.")
+
+def choose_func(nums: list, callback1, callback2):
+    return nums1 and nums2
+
+print(choose_func(nums1, callbackFunc1, callbackFunc2))
